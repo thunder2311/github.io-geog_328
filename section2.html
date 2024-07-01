@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Jordan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">Section 1</a>
+        <a class="active" href="section2.html">Section 2</a>
+        <a href="section3.html">Section 3</a>
+        <a href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h1>Michael Jordan</h1>
+    <div id="content">
+        <p><img src="https://preview.redd.it/l3wxldbv5rq21.jpg?width=1080&crop=smart&auto=webp&s=898447c08629e67b59ad8fa3fa03524a4aac2ceb" alt="Michael Jordan"></p>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

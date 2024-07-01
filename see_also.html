@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Also - Our Achievements</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">Section 1</a>
+        <a href="section2.html">Section 2</a>
+        <a href="section3.html">Section 3</a>
+        <a class="active" href="see_also.html">See Also</a>
+        <a href="references.html">References</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h1>Our Achievements</h1>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-user"></i></p>
+                <h3>11+</h3>
+                <p>Partners</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-check"></i></p>
+                <h3>55+</h3>
+                <p>Projects</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-smile-o"></i></p>
+                <h3>100+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <p><i class="fa fa-coffee"></i></p>
+                <h3>100+</h3>
+                <p>Meetings</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

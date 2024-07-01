@@ -1,0 +1,146 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .topnav {
+      background-color: #004080; 
+      overflow: hidden;
+  }
+  
+  .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2; 
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+  }
+  
+  .topnav a:hover {
+      background-color: #b3d9ff; 
+      color: black; 
+  }
+  
+  .topnav a.active {
+      background-color: #0059b3; 
+      color: white; 
+  }
+  
+  .topnav .icon {
+      display: none;
+  }
+  
+  @media screen and (max-width: 1000px) { 
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+          float: right;
+          display: block;
+      }
+  }
+  
+  @media screen and (max-width: 1000px) { 
+      .topnav.responsive {position: relative;}
+      .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+      }
+      .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+      }
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 5px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+ 
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #444;
+    color: white;
+  }
+  
+  .fa {font-size: 50px;}
+  
+  .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+  }
+  
+  .container {
+      padding: 16px;
+  }
+  
+  .container .title {
+      color: grey;
+      font-size: 18px;
+  }
+  
+  .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #004080;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      transition: 0.3s;
+  }
+  
+  .button:hover {
+      background-color: #555;
+  }
+  
+  @media screen and (max-width: 1000px) {
+      .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 10px;
+      }
+  }
+  
+  body {
+    background-image: url('forest2.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+
+.content {
+    background: rgba(234, 28, 28, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
